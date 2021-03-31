@@ -14,4 +14,4 @@ Questions  | Answers
 
 
 
- 
+ **The driver is Amara and the navigator is fadi**

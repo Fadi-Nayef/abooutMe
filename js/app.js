@@ -119,11 +119,11 @@ function question5(fifth) {
 }
 question5(fifth);
 
-let sixth='';
+let sixth = '';
 function question6(sixth) {
-for (let i = 0; i < 4; i++) {
-    let sixth = prompt('can you guess how many I smoke per day? ');
-    
+    for (let i = 0; i < 4; i++) {
+        let sixth = prompt('can you guess how many I smoke per day? ');
+
         if (sixth < 50) {
             alert('too low');
         } else if (sixth > 50) {
@@ -141,6 +141,33 @@ for (let i = 0; i < 4; i++) {
 question6(sixth);
 alert('the correct answer is 50');
 
+let seventh = '';
+function question7(seventh) {
+
+    for (let i = 0; i < 6; i++) {
+        let seventh = prompt('give me unit of mass in general?')
+        let letters = ['kg', 'g', 'lbm', 'pound', 'ton']
+        let correct = false
+        for (let j = 0; j < letters.length; j++) {
+
+            if (seventh == letters[j]) {
+                correct = true
+                break;
+            }
+        }
+        if (correct == false) {
+            alert('that wrong please try again')
+        } else {
+            alert('that is right')
+            score++;
+            break;
+
+        }
+    }
+    return (seventh)
+}
+question7(seventh);
+alert('your answer should be either kg, g, lbm, pound, ton ')
 
 
 
