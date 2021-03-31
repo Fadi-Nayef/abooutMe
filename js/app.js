@@ -1,3 +1,4 @@
+//console.log('thats awesom');
 'use stric';
 let score = 0;
 
@@ -18,17 +19,12 @@ function question1(helpYou) {
     helpYou = helpYou.toUpperCase();
 
     if (helpYou === 'YES' || helpYou === 'Y') {
-        //console.log('thats awesom');
         alert('i apprciate your trust');
         score++;
-        // eslint-disable-next-line eqeqeq
     } else if (helpYou == 'NO' || helpYou == 'N') {
         alert('oh!! sorry to hear that');
     } else {
 
-        //    while (helpYou !== {'){
-        //    helpYou=prompt('please type only y/yes or n/no');}
-        //    {
         alert('please type only y/yes or n/no');
     }
     console.log(helpYou + ' help you');
@@ -37,9 +33,6 @@ function question1(helpYou) {
 question1(helpYou);
 
 
-
-//makeNew=prompt('no worries , do you wat us to help you ?');
-//console.log(makeNew);
 let makeNew = prompt('do you think im new on coding?');
 function question2(makeNew) {
 
@@ -50,26 +43,26 @@ function question2(makeNew) {
             score++;
             break;
         case 'no':
-            //console.log('we are sorry to hear that');
             alert('you lost this time');
             break;
         default:
+            alert('For the next time u will need to write only yes or no ');
     }
     return (makeNew);
 }
-question2(makeNew)
+question2(makeNew);
 
 let myColor = confirm('do you think i like black confirm or cancel');
+myColor=myColor.toLowerCase();
+
 function question3(myColor) {
 
     switch (myColor) {
         case true:
-            //console.log('black is classie');
             alert('sure you are right,black is classy');
             score++;
             break;
         case false:
-            //console.log('agree ,sometimes black is uncomfy');
             alert('oh god , how do you think that?');
             break;
         default:
@@ -87,33 +80,33 @@ while (!forth) {
 }
 function question4(forth) {
 
-    forth.toLowerCase()
+    forth.toLowerCase();
     if (forth == 'yes' || forth == 'y') {
-        alert('I believe my eyes are brown')
+        alert('I believe my eyes are brown');
         score++;
     } else if (forth == 'no' || forth == 'n') {
-        alert('most of Jordanian have brown eyes')
+        alert('most of Jordanian have brown eyes');
     } else {
-        alert('your answer was wrong')
+        alert('your answer was wrong');
     }
     return (forth);
 }
 question4(forth);
 
-let fifth = prompt('DO I like  potato?');
+let fifth = prompt('DO you think, I like  potato?');
 while (!fifth) {
-    fifth = prompt('please answer only yes/y or no/n withoutspaces for previous question');
+    fifth = prompt('please only answer with  yes/y or no/n ');
 }
 function question5(fifth) {
 
     fifth.toLowerCase()
     if (fifth == 'yes' || fifth == 'y') {
-        alert('I lik it')
+        alert('Actually , yes i do like it ');
         score++;
     } else if (fifth == 'no' || fifth == 'n') {
-        alert('I don\'t like it')
+        alert('it\'s potato MAN!! how i don\'t like it ');
     } else {
-        alert('it\'s wrong')
+        alert('you\'re  wrong');
     }
     return (fifth);
 }
@@ -123,17 +116,17 @@ let sixth = '';
 function question6(sixth) {
     for (let i = 0; i < 4; i++) {
         let sixth = prompt('can you guess how many I smoke per day? ');
-
+    sixth=parseInt(sixth);
         if (sixth < 50) {
             alert('too low');
         } else if (sixth > 50) {
             alert('too high');
         } else if (sixth == 50) {
-            alert('you won!')
+            alert('Lucky you');
             score++;
             break;
         } else {
-            alert('good')
+            alert('good');
         }
     }
     return (sixth);
@@ -145,39 +138,43 @@ let seventh = '';
 function question7(seventh) {
 
     for (let i = 0; i < 6; i++) {
-        let seventh = prompt('give me unit of mass in general?')
-        let letters = ['kg', 'g', 'lbm', 'pound', 'ton']
-        let correct = false
+        let seventh = prompt('would you tell me a unit of mess mesurment?');
+        let letters = ['kg', 'g', 'lbm', 'pound', 'ton'];
+        let correct = false;
         for (let j = 0; j < letters.length; j++) {
 
             if (seventh == letters[j]) {
-                correct = true
+                correct = true;
                 break;
             }
         }
         if (correct == false) {
-            alert('that wrong please try again')
+            alert('please try again, used attemps' +i+ '/ out of 3');
         } else {
-            alert('that is right')
+            alert('you\'re right ,perfect');
             score++;
             break;
 
         }
     }
-    return (seventh)
+    return (seventh);
 }
 question7(seventh);
-alert('your answer should be either kg, g, lbm, pound, ton ')
-
-
-
-
-//let guessNum = prompt('can you guess a numberin my mind smaller than 50 and greater than 10, ?');
-//parseInt(guessNum);
-
-
-
+alert('your answer should be either kg, g, lbm, pound, ton ');
 
 console.log('your score is ' + score);
 document.write();
 alert(`thanks for playing ${userName} your score is ${score} `);
+
+// eslint-disable-next-line eqeqeq
+//    while (helpYou !== {'){
+    //    helpYou=prompt('please type only y/yes or n/no');}
+    //    {
+
+//makeNew=prompt('no worries , do you wat us to help you ?');
+//console.log(makeNew);
+//console.log('we are sorry to hear that');
+//console.log('black is classie');
+//console.log('agree ,sometimes black is uncomfy');
+//let guessNum = prompt('can you guess a numberin my mind smaller than 50 and greater than 10, ?');
+//parseInt(guessNum);
