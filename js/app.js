@@ -100,26 +100,34 @@ function question4(forth) {
 }
 question4(forth);
 
-let fifth = prompt('DO I like  chemical engineering?');
+let fifth = prompt('DO I like  potato?');
 while (!fifth) {
     fifth = prompt('please answer only yes/y or no/n withoutspaces for previous question');
 }
-fifth.toLowerCase()
-if (fifth == 'yes' || fifth == 'y') {
-    alert('I lik my field')
-    score++;
-} else if (fifth == 'no' || fifth == 'n') {
-    alert('you\'re wrong, I like my field')
-} else {
-    alert('sorry to bother you')
+function question5(fifth) {
+
+    fifth.toLowerCase()
+    if (fifth == 'yes' || fifth == 'y') {
+        alert('I lik it')
+        score++;
+    } else if (fifth == 'no' || fifth == 'n') {
+        alert('I don\'t like it')
+    } else {
+        alert('it\'s wrong')
+    }
+    return (fifth);
 }
+question5(fifth);
 
 
-let guessNum = prompt('can you guess a numberin my mind smaller than 50 and greater than 10, ?');
-parseInt(guessNum);
+
+
+//let guessNum = prompt('can you guess a numberin my mind smaller than 50 and greater than 10, ?');
+//parseInt(guessNum);
 
 
 
 
 console.log('your score is ' + score);
 document.write();
+alert(`thanks for playing ${userName} your score is ${score} `);
