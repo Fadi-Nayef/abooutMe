@@ -1,46 +1,79 @@
 'use stric';
+let score = 0;
 
-let oldWebsite = confirm('do you have an old website');
-let makeNew='';
+let userName = prompt('whats your name ?');
+while (!userName){
+    userName=prompt('please write your name');}
+    
+    console.log(`your name is ${userName}`);
 
-if (oldWebsite===true){
-//console.log('thats awesom');
-  alert('thats awesom');
-}else
-{
-    alert('you will need a help');
-    makeNew=prompt('no worries , do you wat us to help you ?');
+alert(`hey ${userName} you welcom , we\'ll have a lot of fun`);
 
+
+
+let helpYou = prompt('do you think i can help you?write y/yes , n/no ');
+
+helpYou = helpYou.toUpperCase();
+
+if (helpYou === 'YES' || helpYou === 'Y') {
+    //console.log('thats awesom');
+    alert('i apprciate your trust');
+    score++;
+    // eslint-disable-next-line eqeqeq
+} else if (helpYou == 'NO' || helpYou == 'N') {
+    alert('oh!! sorry to hear that');
+} else{
+
+//    while (helpYou !== {'){
+//    helpYou=prompt('please type only y/yes or n/no');}
+//    {
+  alert('please type only y/yes or n/no');
 }
+console.log(helpYou + ' help you');
+
+
 
 //makeNew=prompt('no worries , do you wat us to help you ?');
 //console.log(makeNew);
+let makeNew = prompt('do you think im new on coding?');
 
 switch (makeNew) {
     case 'yes':
-//console.log('one of our team will contact you very soon');
-        alert('one of our team will contact you very soon');
+        console.log('you are right ' + makeNew);
+        alert('your answer was right');
+        score++;
         break;
     case 'no':
-//console.log('we are sorry to hear that');
-        alert('we are sorry to hear that');
+        //console.log('we are sorry to hear that');
+        alert('you lost this time');
         break;
     default:
-//console.log('kindly refresh and answer only yes or no');
-        alert('kindly refresh and answer only yes or no');
-        break;
 }
-let yourColor=confirm('do you like black');
 
-switch (yourColor) {
+let myColor = confirm('do you think i like black confirm or cancel');
+
+switch (myColor) {
     case true:
-//console.log('black is classie');
-        alert('black is classie');
+        //console.log('black is classie');
+        alert('sure you are right,black is classy');
+        score++;
         break;
-case false:
-//console.log('agree ,sometimes black is uncomfy');
-    alert('agree ,sometimes black is uncomfy');
-    break;
+    case false:
+        //console.log('agree ,sometimes black is uncomfy');
+        alert('oh god , how do you think that?');
+        break;
     default:
         break;
 }
+console.log('your answer was ' + myColor);
+alert('we are done for the first section thank you ' + userName);
+
+
+let guessNum=prompt('can you guess a numberin my mind smaller than 50 and greater than 10, ?');
+parseInt(guessNum);
+
+
+
+
+console.log('your score is '+ score);
+document.write();
