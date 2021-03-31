@@ -60,22 +60,59 @@ function question2(makeNew) {
 question2(makeNew)
 
 let myColor = confirm('do you think i like black confirm or cancel');
+function question3(myColor) {
 
-switch (myColor) {
-    case true:
-        //console.log('black is classie');
-        alert('sure you are right,black is classy');
-        score++;
-        break;
-    case false:
-        //console.log('agree ,sometimes black is uncomfy');
-        alert('oh god , how do you think that?');
-        break;
-    default:
-        break;
+    switch (myColor) {
+        case true:
+            //console.log('black is classie');
+            alert('sure you are right,black is classy');
+            score++;
+            break;
+        case false:
+            //console.log('agree ,sometimes black is uncomfy');
+            alert('oh god , how do you think that?');
+            break;
+        default:
+            break;
+    }
+    console.log('your answer was ' + myColor);
+    alert('we are done for the first section thank you ' + userName);
+    return (myColor);
 }
-console.log('your answer was ' + myColor);
-alert('we are done for the first section thank you ' + userName);
+question3(myColor);
+
+let forth = prompt('Do I think my eyes are brown?');
+while (!forth) {
+    forth = prompt('please answer only yes/y or no/n withoutspaces for previous question');
+}
+function question4(forth) {
+
+    forth.toLowerCase()
+    if (forth == 'yes' || forth == 'y') {
+        alert('I believe my eyes are brown')
+        score++;
+    } else if (forth == 'no' || forth == 'n') {
+        alert('most of Jordanian have brown eyes')
+    } else {
+        alert('your answer was wrong')
+    }
+    return (forth);
+}
+question4(forth);
+
+let fifth = prompt('DO I like  chemical engineering?');
+while (!fifth) {
+    fifth = prompt('please answer only yes/y or no/n withoutspaces for previous question');
+}
+fifth.toLowerCase()
+if (fifth == 'yes' || fifth == 'y') {
+    alert('I lik my field')
+    score++;
+} else if (fifth == 'no' || fifth == 'n') {
+    alert('you\'re wrong, I like my field')
+} else {
+    alert('sorry to bother you')
+}
 
 
 let guessNum = prompt('can you guess a numberin my mind smaller than 50 and greater than 10, ?');
