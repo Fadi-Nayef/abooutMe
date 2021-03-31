@@ -119,6 +119,29 @@ function question5(fifth) {
 }
 question5(fifth);
 
+let sixth='';
+function question6(sixth) {
+for (let i = 0; i < 4; i++) {
+    let sixth = prompt('can you guess how many I smoke per day? ');
+    
+        if (sixth < 50) {
+            alert('too low');
+        } else if (sixth > 50) {
+            alert('too high');
+        } else if (sixth == 50) {
+            alert('you won!')
+            score++;
+            break;
+        } else {
+            alert('good')
+        }
+    }
+    return (sixth);
+}
+question6(sixth);
+alert('the correct answer is 50');
+
+
 
 
 
