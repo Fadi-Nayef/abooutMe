@@ -14,4 +14,20 @@ Questions  | Answers
 
 
 
- **The driver is Amara and the navigator is fadi**
+ **The driver is Amara on [Fadi's repo](https://github.com/Amara002/abooutMe)**
+  
+
+
+ -  **How did the pair programming process go in general?**
+    ***That was very good experience.***
+ - **Did you learn anything from your partner? If so, what?**
+    ***yes, I leant how to do some eidits in terminal***
+ - **What was the most difficult part of the assignment today?**
+   ***Everything was good***
+ - **What was the easiest part of the assignment today?**
+   ***Until now nothing is diffiult***
+ - **Anything else you’d like to share?**
+   ***I am a glad because I am learning programming everyday***
+- **How long did it take you to complete this assignment? And, before you started, how long did you think it would take you to    -  complete this assignment?**
+  ***It takes around one hour and half and It was taken around 5 hours to accomplish if I worked on this before***
+
