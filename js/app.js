@@ -1,4 +1,3 @@
-//console.log('thats awesom');
 'use stric';
 let score = 0;
 
@@ -53,7 +52,7 @@ function question2(makeNew) {
 question2(makeNew);
 
 let myColor = confirm('do you think i like black confirm or cancel');
-myColor=myColor.toLowerCase();
+myColor = myColor.toLowerCase();
 
 function question3(myColor) {
 
@@ -116,7 +115,7 @@ let sixth = '';
 function question6(sixth) {
     for (let i = 0; i < 4; i++) {
         let sixth = prompt('can you guess how many I smoke per day? ');
-    sixth=parseInt(sixth);
+        sixth = parseInt(sixth);
         if (sixth < 50) {
             alert('too low');
         } else if (sixth > 50) {
@@ -149,7 +148,7 @@ function question7(seventh) {
             }
         }
         if (correct == false) {
-            alert('please try again, used attemps' +i+ '/ out of 3');
+            alert('please try again, used attemps' + i + '/ out of 3');
         } else {
             alert('you\'re right ,perfect');
             score++;
@@ -165,16 +164,3 @@ alert('your answer should be either kg, g, lbm, pound, ton ');
 console.log('your score is ' + score);
 document.write();
 alert(`thanks for playing ${userName} your score is ${score} `);
-
-// eslint-disable-next-line eqeqeq
-//    while (helpYou !== {'){
-    //    helpYou=prompt('please type only y/yes or n/no');}
-    //    {
-
-//makeNew=prompt('no worries , do you wat us to help you ?');
-//console.log(makeNew);
-//console.log('we are sorry to hear that');
-//console.log('black is classie');
-//console.log('agree ,sometimes black is uncomfy');
-//let guessNum = prompt('can you guess a numberin my mind smaller than 50 and greater than 10, ?');
-//parseInt(guessNum);
